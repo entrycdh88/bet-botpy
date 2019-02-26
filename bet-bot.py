@@ -38,10 +38,6 @@ async def on_message(message):
     if message.content.startswith('zzz'):
         await client.send_message(channel, 'zzz')
        
-    if message.content.startswith('ah'):
-        await client.send_message(channel, 'ㅏㅏㅏㅏㅏ')
-        
-    if message.content.startsWith('랜덤'):
-        await client.send_message(channel, random.randrange(vspl[1],vspl[2] - 1))
-        
+    if message.content.startswith('수류탄'):
+        await client.send_message(channel, '킹감자 \npotato')
 client.run(token)
