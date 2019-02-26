@@ -32,7 +32,4 @@ async def on_message(message):
     if message.content == 'ㅇㅇ':
         await message.channel.send('ㅇㅇ...')
 
-    if message.content == 'zzz':
-        await message.channel.send('zzz')
-        
 client.run(token)
