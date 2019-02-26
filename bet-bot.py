@@ -38,4 +38,7 @@ async def on_message(message):
 
     if message.content.startswith('zzz'):
         await client.send_message(channel, 'zzz')
+       
+    if message.content.startswith('ah'):
+        await client.send_message(channel, 'ㅏㅏㅏㅏㅏ')
 client.run(token)
