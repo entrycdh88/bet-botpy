@@ -1,8 +1,9 @@
 import asyncio
 import discord
-import openpyxl
+import os
+
 client = discord.Client()
-token = "NTQ0MzE1Nzc3NTQ5ODYwODc2.D1VaLg.NsznAICCL0pfbCAnrD5tVSxfz3g"
+token = os.environ["BOT_TOKEN"]
 prefix = "off"
 @client.event
 async def on_ready():
