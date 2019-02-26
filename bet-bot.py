@@ -23,46 +23,46 @@ async def on_message(message):
     id = message.author.id
     channel = message.channel
 
-    if message.content.startswith('$py'):
+    if message.content == '$py':
         await message.channel.send('python')
 
-    if message.content.startswith('.'):
+    if message.content == '.':
         await message.channel.send('뭐하냐...')
 
-    if message.content.startswith('ㅋㅋㅋ'):
+    if message.content == 'ㅋㅋㅋ':
         await message.channel.send('안웃긴데...(감정이 없음)')
 
-    if message.content.startswith('ㅇㅇ'):
+    if message.content == 'ㅇㅇ':
         await message.channel.send('ㅇㅇ...')
 
-    if message.content.startswith('zzz'):
+    if message.content == 'zzz':
         await message.channel.send('zzz')
 
-    if message.content.startsWith('수류탄'):
+    if message.content == '수류탄':
         await message.channel.send('킹감자')
 
-    if message.content.startsWith('랩터'):
+    if message.content == '랩터':
         await message.channel.send('PRO YOUTUBER RAPTORLEE')
 
-    if message.content.startsWith('매니저'):
+    if message.content == '매니저':
         await message.channel.send('無')
 
-    if message.content.startsWith('배그'):
+    if message.content == '배그':
         await message.channel.send('Player Unknown Batle Ground')
 
-    if message.content.startsWith('슬찬'):
+    if message.content == '슬찬':
         await message.channel.send('PRO YOUTUBER RAPTORLEE')
 
-    if message.content.startsWith('팬타'):
+    if message.content == '팬타':
         await message.channel.send('???: 키킥 넷마블~')
 
-    if message.content.startsWith('랩터'):
+    if message.content == '랩터':
         await message.channel.send('PRO YOUTUBER RAPTORLEE')
 
-    if message.content.startsWith('라면'):
+    if message.content == '라면':
         await message.channel.send('꼬불꼬불 맛좋은 라면~~')
 
-    if message.content.startsWith('에임갓'):
+    if message.content == '에임갓':
         await message.channel.send('반대로 에임ㄸ...')
 
     
