@@ -1,6 +1,10 @@
 import asyncio
 import discord
 import os
+word = []
+comq = []
+coma = []
+vspl = message.content.split(' ')
 
 client = discord.Client()
 token = os.environ["BOT_TOKEN"]
@@ -38,4 +42,18 @@ async def on_message(message):
        
     if message.content.startswith('ah'):
         await client.send_message(channel, 'ㅏㅏㅏㅏㅏ')
+        
+    if message.content.word[0] == '$':
+        n = 0
+        for i in comq:
+            if message.content == i:
+                await client.send_message(channel, coma[n])
+                break
+            n = n + 1
+            
+     if message.content.startsWith('명령어 추가'):
+        comq.append(vspl[2])
+        coma.append(vspl[3])
+        await client.send_message(channel, '명령어가 추가 됐습니다.')
+        
 client.run(token)
