@@ -52,7 +52,7 @@ async def on_message(message):
             n = n + 1
             
      if message.content.startsWith('명령어 추가'):
-        comq.append(vspl[2])
+        comq.append('$' + vspl[2])
         coma.append(vspl[3])
         await client.send_message(channel, '명령어가 추가 됐습니다.')
         
