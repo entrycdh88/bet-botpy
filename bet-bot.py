@@ -24,7 +24,7 @@ async def on_message(message):
     channel = message.channel
 
     if message.content.startswith('$py'):
-        await client.send_message(channel, 'python')
+        await message.channel.send('python')
 
     if message.content.startswith('.'):
         await client.send_message(channel, '뭐하냐...')
