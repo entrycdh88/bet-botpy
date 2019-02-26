@@ -40,4 +40,6 @@ async def on_message(message):
        
     if message.content == '수류탄':
         await client.send_message(channel, '킹감자')
+        
+        
 client.run(token)
