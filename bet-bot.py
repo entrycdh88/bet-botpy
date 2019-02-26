@@ -30,9 +30,6 @@ async def on_message(message):
     if message.content.startswith('ㅋㅋㅋ'):
         await client.send_message(channel, '안웃긴데...(감정이 없음)')
 
-    if message.content.startswith('ㅇ'):
-        await client.send_message(channel, 'ㅇㅇ...')
-
     if message.content.startswith('ㅇㅇ'):
         await client.send_message(channel, 'ㅇㅇ...')
 
