@@ -1,9 +1,7 @@
 import asyncio
 import discord
 import os
-word = []
-comq = []
-coma = []
+import random
 vspl = message.content.split(' ')
 
 client = discord.Client()
@@ -42,5 +40,8 @@ async def on_message(message):
        
     if message.content.startswith('ah'):
         await client.send_message(channel, 'ㅏㅏㅏㅏㅏ')
+        
+    if message.content.startsWith('랜덤'):
+        await client.send_message(channel, random.randrange(vspl[1],vspl[2] - 1))
         
 client.run(token)
