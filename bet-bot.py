@@ -11,7 +11,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("===========")
-    await client.change_presence(game=discord.Game(name="Python으로 실행중입니다.", type=1))
+    await client.change_presence(game=discord.Game(name="Github 호스팅중", type=1))
     print('Logged bot')
 @client.event
 async def on_message(message):
